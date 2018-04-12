@@ -1,0 +1,16 @@
+<div class="text-center">
+    <!-- progress spinnner -->
+    <div *ngIf="service.showSpinner">
+        <h1 *ngIf="service.auth">Authenticating User</h1>
+        <h1 *ngIf="service.fetch">Feching Data</h1>
+        <mat-spinner color="accent" style="margin: 0 auto;"></mat-spinner>
+    </div>
+
+    <!-- display restrived question from server-->
+    <span [innerHTML]="tempcasedata"></span>
+
+    <!-- display next and Preious question -->
+    <button mat-raised-button color="warn" (click)="Privousbtn()" *ngIf="disableMePrev">Preious</button>
+    <button mat-raised-button color="primary" (click)="Nextbtn()" *ngIf="disableMeNext">Next</button>
+
+</div>

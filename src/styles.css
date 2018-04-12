@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+.spinner {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    animation: rotate 0.8s infinite linear;
+    border: 9px solid #ffd740;
+    border-right-color: transparent;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.onboard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.onboard h1 {
+    text-align: center;
+    margin-top: 20%;
+}
+
+h1 {
+    color: #58595b;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+body {
+    background-color: #f8f8f8;
+}
